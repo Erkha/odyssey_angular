@@ -1,0 +1,13 @@
+<div class = "card">
+    <img [src]="User.photo" [alt]="User.name">
+    <div class = "card-body">
+        <p class="bold-text">Nom: {{ User.name }}</p>
+        <p class="bold-text">Prénom: {{ User.firstName }}</p>
+        <blockquote>{{ User.quote }}</blockquote>
+        <input [(ngModel)]="User.quote">
+    </div>
+    <div class = "card-footer">
+        <p [hidden] = "hideAge" > age: {{User.age}}</p>
+        <button (click)="displayAge()">Afficher/Masquer mon âge</button>
+    </div>
+</div>
