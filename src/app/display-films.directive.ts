@@ -13,5 +13,5 @@ export class DisplayFilmsDirective {
       this.ctrRef.clear;
     }
   }
-  constructor(private tplRef: TemplateRef, private ctrRef: ViewContainerRef) { }
+  constructor(private tplRef: TemplateRef<any>, private ctrRef: ViewContainerRef) { }
 }
