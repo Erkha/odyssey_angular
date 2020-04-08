@@ -5,11 +5,17 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { FilmListComponent } from './film-list/film-list.component';
+import { HighlightDirective } from './highlight.directive';
+import { DisplayFilmsDirective } from './display-films.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    FilmListComponent,
+    HighlightDirective,
+    DisplayFilmsDirective
   ],
   imports: [
     BrowserModule,
